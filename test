@@ -1,1 +1,31 @@
-p
+<!--AMD-->
+<h1>AMD</h1>
+<p>&nbsp;</p>
+<h2>Definition</h2>
+<p>Only use this tag for outbound campaigns. This tag enables the use of answering machine detection. The system will determine whether the answering line is live or an answering machine and react accordingly.</p>
+<h2>Value</h2>
+<p>Tag contains a <span class="xml-tag">&lt;live&gt;</span> tag and a <span class="xml-tag">&lt;machine&gt;</span> tag. These tags tell the system what to do in either instance. An <span class="xml-tag">&lt;amd&gt;</span> tag must contain both a <span class="xml-tag">&lt;live&gt;</span> tag and a <span class="xml-tag">&lt;machine&gt;</span> tag. The contents of these tags may be any other tag.</p>
+<h2>Attributes</h2>
+<table class="callfire-xml-tags table table-striped">
+<thead>
+<tr><th>Attribute</th><th>Required</th><th>Values</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class="attribute-name">name</td>
+<td>N</td>
+<td class="attribute-value">any text</td>
+<td>a unique name for the tag</td>
+</tr>
+</tbody>
+</table>
+<h2>Examples</h2>
+<p>The following example presents a user with options if the user answers live. However, if we reach an answering machine, the system will play a message after the beep and hang up.</p>
+<menu>332122 5552312312 5552312312 332192</menu>
+<pre class="rainbow"><code data-language="xml">
+        
+        
+        332123
+        
+    
+</code></pre>
